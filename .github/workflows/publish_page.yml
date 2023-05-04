@@ -11,6 +11,8 @@ jobs:
     - name: Install hugo
       run: sudo apt install -y hugo golang
     - name: Build
+      run: go build
+    - name: Create static page
       run: hugo --minify
     - name: Deploy
       run: cp -R ./public/* ./docs
