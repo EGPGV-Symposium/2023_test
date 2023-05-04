@@ -1,0 +1,15 @@
+name: Publish Page
+
+on:
+  workflow_dispatch:
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v3
+  - name: Install hugo
+    run: sudo apt install -y hugo
+  - name: Build
+    run: hugo --minify
+  - name: Deploy
+    run: cp -R ./public/* ./docs
