@@ -2,7 +2,7 @@
 widget: egpgv_hero
 headless: true
 weight: 10
-title: WELCOME TO EGPGV 2023
+title: WELCOME TO EGPGV 2023 TEST PAGE
 hero_media:
 # cta:
 #   label: EuroVis Webpage
