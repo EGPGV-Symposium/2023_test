@@ -11,6 +11,6 @@ jobs:
     - name: Install hugo 1
       run: sudo apt install -y golang
     - name: Install hugo 2
-      run: GOBIN=/usr/bin/ CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.97.3
+      run: GOBIN=~/ CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.97.3
     - name: Create static page
-      run: hugo --minify -d ./docs/
+      run: ~/hugo --minify -d ./docs/
